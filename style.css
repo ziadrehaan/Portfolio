@@ -483,7 +483,7 @@ a:hover {
 .social-icon:hover i {
   color: #2ecc71;
 }
-</style>
+
 
 
 /* خط متوهج بسيط تحت العنوان */
@@ -993,3 +993,71 @@ section.show {
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
+/* ======= Responsive for Mobile ======= */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    padding: 5% 3%;
+    gap: 2rem;
+  }
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .home-image {
+    margin-top: 1rem;
+  }
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Navbar */
+  .navbar a {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+
+  /* Skills Section */
+  .Skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Experience Section */
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+  .experience-card {
+    text-align: center;
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  .project-card {
+    height: auto;
+  }
+
+  /* Contact Section */
+  .contact-form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
